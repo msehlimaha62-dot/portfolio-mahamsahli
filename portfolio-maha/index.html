@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maha Msahli — Portfolio · Génie Logiciel</title>
+<meta name="description" content="Portfolio de Maha Msahli — étudiante en Génie Logiciel & Systèmes d'Information à la Faculté des Sciences de Monastir. Développement full-stack, intégration d'IA, réseaux et systèmes.">
+<meta name="author" content="Maha Msahli">
+<meta property="og:title" content="Maha Msahli — Portfolio">
+<meta property="og:description" content="Étudiante en Génie Logiciel & SI · Développement full-stack & intégration d'IA.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <a href="#hero" class="nav-logo">Maha <span>Msahli</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="hero">
+  <div class="hero-text">
+    <span class="eyebrow">Portfolio</span>
+    <h1 class="hero-name">Maha<br><em>Msahli</em></h1>
+    <p class="hero-role">Étudiante en Génie Logiciel &amp; Systèmes d'Information</p>
+    <p class="hero-loc">Faculté des Sciences de Monastir · Tunisie</p>
+    <p class="hero-desc">Curieuse et rigoureuse, passionnée par tous les domaines de l'informatique — du développement full-stack à l'intégration de l'IA. Major de promotion en 1ʳᵉ année, 2ᵉ de la promotion en 2ᵉ année.</p>
+    <div class="hero-actions">
+      <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+      <a href="#contact" class="btn btn-ghost">Me contacter</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="hstat-num">4</div><div class="hstat-label">Projets réalisés</div></div>
+      <div><div class="hstat-num">1ʳᵉ</div><div class="hstat-label">Major de promo · L1</div></div>
+      <div><div class="hstat-num">2ᵉ</div><div class="hstat-label">De la promo · L2</div></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="photo">
+      <div class="photo-frame"><img src="assets/profile.png" alt="Maha Msahli"></div>
+      <div class="photo-badge">Génie Logiciel<br><b>&amp; Systèmes d'Information</b></div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <div class="section-tag reveal">Qui suis-je</div>
+  <h2 class="section-title reveal">À propos <em>de moi</em></h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>Étudiante en Licence en Sciences Informatiques — <strong>Génie Logiciel et Systèmes d'Information</strong> à la Faculté des Sciences de Monastir. <strong>Major de promotion en 1ʳᵉ année</strong> (LSI1), puis <strong>2ᵉ de la promotion en 2ᵉ année</strong>.</p>
+      <p>Je m'intéresse à tous les domaines de l'informatique : développement web full-stack, intégration d'agents IA, réseaux Cisco et systèmes Linux. J'aime construire des solutions concrètes à partir de besoins réels — de la conception UML jusqu'à l'implémentation finale.</p>
+      <p>Titulaire de 2 badges Cisco Linux et en attente des résultats LPI Linux Essentials, je cherche à contribuer concrètement dans un environnement d'ingénierie logicielle stimulant.</p>
+    </div>
+    <div class="about-cards reveal">
+      <div class="about-card"><div class="card-num">1ʳᵉ</div><div class="card-label">Major de promotion · L1</div></div>
+      <div class="about-card"><div class="card-num">2ᵉ</div><div class="card-label">De la promotion · L2</div></div>
+      <div class="about-card"><div class="card-num">4</div><div class="card-label">Projets réalisés</div></div>
+      <div class="about-card"><div class="card-num">2</div><div class="card-label">Badges Cisco Linux</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projets" class="section">
+  <div class="section-tag reveal">Réalisations</div>
+  <h2 class="section-title reveal">Mes <em>projets</em></h2>
+
+  <div class="proj-tabs reveal">
+    <button class="proj-tab active" onclick="showProj('ss',this)">SmartSouq B2B</button>
+    <button class="proj-tab" onclick="showProj('sf',this)">ShopFlow</button>
+    <button class="proj-tab" onclick="showProj('sb',this)">SmartBudget</button>
+    <button class="proj-tab" onclick="showProj('rh',this)">Réseau Hôtelier</button>
+  </div>
+
+  <!-- SmartSouq -->
+  <div class="proj-panel active" id="proj-ss">
+    <div class="reveal">
+      <div class="gallery-main" id="ss-main" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="assets/ss-07.png" alt="SmartSouq B2B — page d'accueil">
+      </div>
+      <div class="gallery-thumbs">
+        <img src="assets/ss-07.png" class="active" onclick="swapMain('ss-main',this)" alt="Page d'accueil">
+        <img src="assets/ss-02.png" onclick="swapMain('ss-main',this)" alt="Agent IA — scoring fiabilité">
+        <img src="assets/ss-03.png" onclick="swapMain('ss-main',this)" alt="Agent IA — prédiction de demande">
+        <img src="assets/ss-04.png" onclick="swapMain('ss-main',this)" alt="Agent IA — recommandation">
+        <img src="assets/ss-05.png" onclick="swapMain('ss-main',this)" alt="Agent IA — optimisation LEC">
+        <img src="assets/ss-06.png" onclick="swapMain('ss-main',this)" alt="Catalogue produits">
+        <img src="assets/ss-01.png" onclick="swapMain('ss-main',this)" alt="Panel administrateur">
+        <img src="assets/ss-08.png" onclick="swapMain('ss-main',this)" alt="Chatbot IA">
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="proj-label">Projet de Fin d'Année · Fév-Mai 2025</div>
+      <h3 class="proj-title">SmartSouq B2B</h3>
+      <p class="proj-type">Plateforme e-commerce B2B — IT &amp; Électronique, Tunisie</p>
+      <p class="proj-desc">Plateforme complète connectant grossistes et fournisseurs IT en Tunisie, intégrant 4 agents IA pour optimiser les décisions d'achat et la gestion des fournisseurs.</p>
+      <ul class="proj-features">
+        <li>4 agents IA : scoring fiabilité, prédiction de demande, recommandation, optimisation LEC</li>
+        <li>RBAC complet : Administrateur, Grossiste, Fournisseur</li>
+        <li>Chatbot IA intégré avec Groq LLaMA 3.3-70b</li>
+        <li>Dashboard analytique avec export Excel / PDF</li>
+      </ul>
+      <div class="proj-stack">
+        <span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">Express</span>
+        <span class="tag">MySQL</span><span class="tag">Prisma</span><span class="tag">Groq LLaMA</span>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ShopFlow -->
+  <div class="proj-panel" id="proj-sf">
+    <div class="reveal">
+      <div class="gallery-main" id="sf-main" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="assets/sf-01.png" alt="ShopFlow — page d'accueil">
+      </div>
+      <div class="gallery-thumbs">
+        <img src="assets/sf-01.png" class="active" onclick="swapMain('sf-main',this)" alt="Page d'accueil">
+        <img src="assets/sf-02.png" onclick="swapMain('sf-main',this)" alt="Espace acheteur">
+        <img src="assets/sf-03.png" onclick="swapMain('sf-main',this)" alt="Catalogue avec filtres">
+        <img src="assets/sf-04.png" onclick="swapMain('sf-main',this)" alt="Fiche produit">
+        <img src="assets/sf-05.png" onclick="swapMain('sf-main',this)" alt="Tableau de bord admin">
+        <img src="assets/sf-06.png" onclick="swapMain('sf-main',this)" alt="Gestion des coupons">
+        <img src="assets/sf-07.png" onclick="swapMain('sf-main',this)" alt="Gestion des utilisateurs">
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="proj-label">Projet Académique · Avr–Mai 2025</div>
+      <h3 class="proj-title">ShopFlow</h3>
+      <p class="proj-type">Application e-commerce B2C — gestion des rôles</p>
+      <p class="proj-desc">Application e-commerce B2C avec gestion des rôles CLIENT / SELLER / ADMIN, intégrant la gestion des commandes, des coupons et un tableau de bord administrateur complet.</p>
+      <ul class="proj-features">
+        <li>Gestion des rôles : Client, Vendeur, Administrateur</li>
+        <li>Gestion des commandes et des coupons</li>
+        <li>Tableau de bord administrateur</li>
+        <li>Architecture full-stack moderne</li>
+      </ul>
+      <div class="proj-stack">
+        <span class="tag">Spring Boot</span><span class="tag">Next.js</span>
+        <span class="tag">Java EE</span><span class="tag">REST API</span>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- SmartBudget -->
+  <div class="proj-panel" id="proj-sb">
+    <div class="reveal">
+      <div class="gallery-main" id="sb-main" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="assets/sb-01.png" alt="SmartBudget — page d'accueil">
+      </div>
+      <div class="gallery-thumbs">
+        <img src="assets/sb-01.png" class="active" onclick="swapMain('sb-main',this)" alt="Page d'accueil">
+        <img src="assets/sb-02.png" onclick="swapMain('sb-main',this)" alt="Fonctionnalités">
+        <img src="assets/sb-03.png" onclick="swapMain('sb-main',this)" alt="Aperçu de l'application">
+        <img src="assets/sb-04.png" onclick="swapMain('sb-main',this)" alt="Tableau de bord personnalisé">
+        <img src="assets/sb-05.png" onclick="swapMain('sb-main',this)" alt="Version mobile responsive">
+        <img src="assets/sb-06.png" onclick="swapMain('sb-main',this)" alt="Création de compte">
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="proj-label">Projet Personnel · Nov–Déc 2025</div>
+      <h3 class="proj-title">SmartBudget</h3>
+      <p class="proj-type">Application web de gestion budgétaire personnelle</p>
+      <p class="proj-desc">Née d'un besoin réel : organiser mes finances en tant qu'étudiante. Face à l'absence de base de données, j'ai recherché et implémenté LocalStorage et JSON comme solution de persistance côté client.</p>
+      <ul class="proj-features">
+        <li>Suivi des dépenses par catégorie avec statistiques automatiques</li>
+        <li>Graphiques de suivi et conseils financiers personnalisés</li>
+        <li>Persistance via LocalStorage &amp; JSON — sans backend</li>
+        <li>Design responsive — mobile &amp; desktop</li>
+      </ul>
+      <div class="proj-stack">
+        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        <span class="tag">Bootstrap</span><span class="tag">LocalStorage</span>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Réseau Hôtelier -->
+  <div class="proj-panel" id="proj-rh">
+    <div class="reveal">
+      <div class="gallery-main" id="rh-main" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="assets/rh-01.png" alt="Réseau Hôtelier — topologie Cisco Packet Tracer">
+      </div>
+      <div class="gallery-thumbs">
+        <img src="assets/rh-01.png" class="active" onclick="swapMain('rh-main',this)" alt="Topologie complète">
+        <img src="assets/rh-02.png" onclick="swapMain('rh-main',this)" alt="Détail topologie — VLAN">
+        <img src="assets/rh-03.png" onclick="swapMain('rh-main',this)" alt="Configuration CLI — VLAN">
+        <img src="assets/rh-04.png" onclick="swapMain('rh-main',this)" alt="Configuration CLI — routage">
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="proj-label">Projet Académique · Fév–Mai 2025</div>
+      <h3 class="proj-title">Réseau Hôtelier</h3>
+      <p class="proj-type">Configuration &amp; Administration réseau — Cisco Packet Tracer</p>
+      <p class="proj-desc">Conception et configuration complète d'un réseau informatique pour la gestion d'un hôtel sur Cisco Packet Tracer, organisé par étage et par service avec une segmentation VLAN complète.</p>
+      <ul class="proj-features">
+        <li>Routage inter-VLAN (router-on-a-stick, encapsulation 802.1Q)</li>
+        <li>8 VLAN segmentés par service : réception, magasin, logistique, RH, finance, IT…</li>
+        <li>Liaisons série entre routeurs d'étage et plan d'adressage IP complet</li>
+        <li>Configuration via interface CLI Cisco IOS</li>
+      </ul>
+      <div class="proj-stack">
+        <span class="tag">Cisco Packet Tracer</span><span class="tag">VLAN 802.1Q</span>
+        <span class="tag">Routage inter-VLAN</span><span class="tag">Cisco IOS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="competences" class="section">
+  <div class="section-tag reveal">Savoir-faire</div>
+  <h2 class="section-title reveal">Mes <em>compétences</em></h2>
+  <div class="skills-layout">
+    <div class="skills-intro reveal">
+      <p>Du frontend au backend, en passant par les bases de données, les réseaux et l'intégration de l'IA — je m'intéresse à tous les aspects du développement logiciel et continue d'apprendre chaque jour.</p>
+      <div class="langs">
+        <div class="lang"><b>Arabe</b><span>Maternelle</span></div>
+        <div class="lang"><b>Français</b><span>B2</span></div>
+        <div class="lang"><b>Anglais</b><span>B2</span></div>
+      </div>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill"><div class="skill-idx">01</div><div class="skill-name">React.js</div><div class="skill-cat">Frontend</div></div>
+      <div class="skill"><div class="skill-idx">02</div><div class="skill-name">Node.js / Express</div><div class="skill-cat">Backend</div></div>
+      <div class="skill"><div class="skill-idx">03</div><div class="skill-name">Java EE / Spring Boot</div><div class="skill-cat">Backend</div></div>
+      <div class="skill"><div class="skill-idx">04</div><div class="skill-name">Python</div><div class="skill-cat">Scripting</div></div>
+      <div class="skill"><div class="skill-idx">05</div><div class="skill-name">C / C++</div><div class="skill-cat">Programmation</div></div>
+      <div class="skill"><div class="skill-idx">06</div><div class="skill-name">MySQL / Prisma</div><div class="skill-cat">Base de données</div></div>
+      <div class="skill"><div class="skill-idx">07</div><div class="skill-name">Groq LLaMA API</div><div class="skill-cat">Intégration IA</div></div>
+      <div class="skill"><div class="skill-idx">08</div><div class="skill-name">HTML / CSS / JS</div><div class="skill-cat">Frontend</div></div>
+      <div class="skill"><div class="skill-idx">09</div><div class="skill-name">UML / Conception</div><div class="skill-cat">Architecture</div></div>
+      <div class="skill"><div class="skill-idx">10</div><div class="skill-name">Linux</div><div class="skill-cat">Système</div></div>
+      <div class="skill"><div class="skill-idx">11</div><div class="skill-name">Réseaux Cisco</div><div class="skill-cat">Infrastructure</div></div>
+      <div class="skill"><div class="skill-idx">12</div><div class="skill-name">Git / GitHub</div><div class="skill-cat">Versioning</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section id="certifications" class="section">
+  <div class="section-tag reveal">Formations</div>
+  <h2 class="section-title reveal">Certifications <em>&amp; formations</em></h2>
+  <div class="certs-grid">
+    <div class="cert reveal">
+      <div class="cert-org">Cisco Networking Academy</div>
+      <div class="cert-name">Linux Unhatched</div>
+      <div class="cert-date">Oct — Nov 2024</div>
+      <span class="cert-badge">Obtenu</span>
+    </div>
+    <div class="cert reveal">
+      <div class="cert-org">Cisco Networking Academy</div>
+      <div class="cert-name">Linux Essentials</div>
+      <div class="cert-date">Fév — Mai 2026</div>
+      <span class="cert-badge">Obtenu</span>
+    </div>
+    <div class="cert reveal">
+      <div class="cert-org">Linux Professional Institute</div>
+      <div class="cert-name">LPI Linux Essentials</div>
+      <div class="cert-date">Mai 2025 — Examen passé</div>
+      <span class="cert-badge pending">En attente des résultats</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-tag">Contact</div>
+  <h2 class="section-title">Travaillons <em>ensemble</em></h2>
+  <p class="contact-desc">Ouverte aux opportunités de stage, de collaboration et d'apprentissage en environnement professionnel stimulant.</p>
+  <a href="mailto:msehlimaha62@gmail.com" class="contact-email">msehlimaha62@gmail.com</a>
+  <div class="contact-links">
+    <a href="https://www.linkedin.com/in/msahli-maha-123028366" target="_blank" rel="noopener" class="contact-link">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      LinkedIn
+    </a>
+    <a href="https://github.com/msehlimaha62-dot" target="_blank" rel="noopener" class="contact-link">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12a12 12 0 0 0 8.21 11.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      GitHub
+    </a>
+    
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© <span id="year">2026</span> Maha Msahli — Tous droits réservés.</p>
+  <p class="interests">Cinéphile · Mélomane · Curiosité technologique</p>
+  <p>Faculté des Sciences de Monastir — GL &amp; SI</p>
+</footer>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" aria-label="Fermer">✕</button>
+  <img id="lb-img" src="" alt="Aperçu agrandi">
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
